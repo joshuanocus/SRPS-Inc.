@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRPS Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+  <div class="container">
+        <div id="container1">
+            <!-- Content for container 1 goes here -->
+            <h1>Welcome!</h1>
+            <h3>Login & <br>Sign up</h3>
+            <img src="logo.png" alt="">
+        </div>
+
+        <div id="container2">
+            <!-- Content for container 2 goes here -->
+            <h4>SIGN UP</h4>
+            <form id="login-form" onsubmit="return validateForm()">
+              <label for="email"><b>Email</b></label><br>
+              <input type="text" id="email" name="email" required><br><br>
+
+              <label for="password"><b>Password</b></label><br>
+              <input type="password" id="password" name="password" required><br><br>
+
+              <a href="index.html">
+              <button type="submit" name="submit" onclick="login()">Sign Up</button>
+              </a>
+
+            </form>
+            <div class="line-with-text">
+              <hr>
+              <span>or</span>
+              <hr>
+            </div>
+            <div class="button-container">
+              <button class="icon-button">
+                <i class="material-icons">facebook</i>
+              </button>
+              <button class="icon-button">
+                <i class="material-icons">mail</i>
+              </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
